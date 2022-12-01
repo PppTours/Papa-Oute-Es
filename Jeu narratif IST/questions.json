@@ -4,7 +4,7 @@
     {"id" : 2, "question" : "Quel est le temps de gestation moyen d'une otarie ?", "réponses" : ["De 7 à 8 mois", "De 10 à 12 mois", "De 3 à 4 moi"], "bonne réponse" : 1},
     {"id" : 3, "question" : " ", "réponses" : ["", "", ""], "bonne réponse" : 0},
     {"id" : 4, "question" : " Quels sont les symptomes d'une hepatite", "réponses" : ["La diarrhée", "Des saignements", "La perte d’appétit"], "bonne réponse" : 0,2},
-    {"id" : 5, "question" : " Dans qu'elles circonstances se transmet l'hepatite B ?", "réponses" : ["", "", ""], "bonne réponse" : 0},
+    {"id" : 5, "question" : " Dans qu'elles circonstances se transmet l'hepatite B ?", "réponses" : ["Par relations sexuelles", "Lors d’un tatouage avec du matériel non stérile", "En buvant dans un verre utilisé par une personne contaminée"], "bonne réponse" : 0,1},
     {"id" : 6, "question" : " ", "réponses" : ["", "", ""], "bonne réponse" : 0},
     {"id" : 7, "question" : " ", "réponses" : ["", "", ""], "bonne réponse" : 0},
     {"id" : 8, "question" : " ", "réponses" : ["", "", ""], "bonne réponse" : 0},
