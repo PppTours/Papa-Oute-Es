@@ -1,0 +1,19 @@
+[
+    {"id" : 0, "question" : "Quel est le moyen de contraception le plus efficace ?", "réponses" : ["Le préservatif", "La pillule", "la méthode du retrait"], "bonne réponse" : 0},
+    {"id" : 1, "question" : "Qu’est-ce qu’une IST ?", "réponses" : ["une interruption sensorielle temporaire", "Une intense sensibilité à la température", "Une  infection sexuellement transmissible"], "bonne réponse" :2 },
+    {"id" : 2, "question" : "Quel est le temps de gestation moyen d'une otarie ?", "réponses" : ["De 7 à 8 mois", "De 10 à 12 mois", "De 3 à 4 moi"], "bonne réponse" : 1},
+    {"id" : 3, "question" : " C'est quoi une Fibrose/Cirrhose ?", "réponses" : ["Des problèmes articulaires", "La destruction des cellules hépatiques par diverses agressions : abus d’alcool, hépatite virale, médicamenteuse", "Une fragilité osseuse"], "bonne réponse" : 1},
+    {"id" : 4, "question" : " Quels sont les symptomes d'une hepatite", "réponses" : ["La diarrhée", "Des saignements", "La perte d’appétit"], "bonne réponse" : 0,2},
+    {"id" : 5, "question" : " Dans qu'elles circonstances se transmet l'hepatite B ?", "réponses" : ["Par relations sexuelles", "Lors d’un tatouage avec du matériel non stérile", "En buvant dans un verre utilisé par une personne contaminée"], "bonne réponse" : 0,1},
+    {"id" : 6, "question" : " Quand le dépistage devient-il obligatoire ?", "réponses" : ["", "", ""], "bonne réponse" : 0},
+    {"id" : 7, "question" : " ", "réponses" : ["test des hépatites B et C ", "jamais c’est inutile ce truc", "don du sang, sperme ou organe"], "bonne réponse" : 0,2},
+    {"id" : 8, "question" : " ", "réponses" : ["", "", ""], "bonne réponse" : 0},
+    {"id" : 9, "question" : " ", "réponses" : ["", "", ""], "bonne réponse" : 0},
+    {"id" : 10, "question" : " ", "réponses" : ["", "", ""], "bonne réponse" : 0},
+    {"id" : 11, "question" : " ", "réponses" : ["", "", ""], "bonne réponse" : 0},
+    {"id" : 12, "question" : " ", "réponses" : ["", "", ""], "bonne réponse" : 0},
+    {"id" : 13, "question" : " ", "réponses" : ["", "", ""], "bonne réponse" : 0},
+    {"id" : 14, "question" : " ", "réponses" : ["", "", ""], "bonne réponse" : 0},
+    {"id" : 15, "question" : " ", "réponses" : ["", "", ""], "bonne réponse" : 0},
+    {"id" : 16, "question" : " ", "réponses" : ["", "", ""], "bonne réponse" : 0}
+]
