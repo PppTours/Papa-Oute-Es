@@ -1,4 +1,9 @@
 /* Sidenav menu */
+@font-face {
+	font-family: 'Champagne';
+	src: url('typo/Champagne.ttf');
+ }
+
 .sidenav {
     height: 100%;
     width: 250px;
@@ -6,23 +11,24 @@
     z-index: 1;
     top: 0;
     left: -250px;
-    background-color: #e8e8e8;
+    background-color: #2d2d2d;
     padding-top: 60px;
     transition: left 0.5s ease;
   }
   
   /* Sidenav menu links */
   .sidenav a {
+    font-family: "Champagne";
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #aaa8a8;
     display: block;
     transition: 0.3s;
   }
   
   .sidenav a:hover {
-    color: #111;
+    color: rgb(255, 255, 255);
   }
   
   .sidenav ul {
