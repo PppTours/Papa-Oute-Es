@@ -4,6 +4,7 @@
         <title></title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="main_css.css">
+        <?php include("menu.html"); ?>
     </head>
     <body>
         <input hidden id="data" value="test">
@@ -22,6 +23,7 @@
             <button id="reponseB" class="reponse" onclick="repondre(1)"></button>
             <button id="reponseC" class="reponse" onclick="repondre(2)"></button>
             <br>
+            <p id="isGood"></p>
             <button hidden id="suivant" class="suivant" onclick="suivantClick()">Suivant</button>
         </div>
     </body>

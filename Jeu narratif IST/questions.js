@@ -12,15 +12,11 @@ const json = [
     {"id" : 10, "question" : "Quelle est l’efficacité de la méthode du retrait ?", "réponses" : ["Très efficace à 100%", "Elle est efficace 1 fois sur 2", "Elle est efficace 3 fois sur 4"], "bonne réponse" : 2, "infos complémentaires" : "C’est une méthode très déconseillée car elle ne protège aucun des deux partenaires"},
     {"id" : 11, "question" : "La pilule me fera-t-elle prendre du poids ? ", "réponses" : ["Oui, ça dépend de ton poids avant la première prise", "Oui : certaines d’entres elles créent une rétention d’eau", "Non, c’est une idée reçue"], "bonne réponse" : 1, "infos complémentaires" : "La prise de poids est un effet secondaire chez certaines femmes, mais pas pour la majorité"},
     {"id" : 12, "question" : "Si le préservatif rompt, qu’est-ce que je risque ? ", "réponses" : ["Forcément une grossesse", "La possible transmission d’une IST", "Rien tant que mon partenaire n’a pas éjaculé"], "bonne réponse" : 1, "infos complémentaires" : "La grossesse n’est qu’un risque même dans cette situation, tout comme les IST"},
-    {"id" : 13, "question" : "", "réponses" : ["", "", ""], "bonne réponse" : 0, "infos complémentaires" : ""},
-    {"id" : 14, "question" : "", "réponses" : ["", "", ""], "bonne réponse" : 0, "infos complémentaires" : ""},
-    {"id" : 15, "question" : "", "réponses" : ["", "", ""], "bonne réponse" : 0, "infos complémentaires" : ""},
-    {"id" : 16, "question" : "", "réponses" : ["", "", ""], "bonne réponse" : 0, "infos complémentaires" : ""}
 ]
 
+
+
 data=document.getElementById("data").value;
-console.log(document.getElementById("data").value)
-console.log(data)
 
 var buttonA = document.getElementById("reponseA");
 var buttonB = document.getElementById("reponseB");
@@ -28,8 +24,9 @@ var buttonC = document.getElementById("reponseC");
 
 var suivant = document.getElementById("suivant");
 
-var questionEnCours = 0;
-var aRepondu = false;
+var questionsDejaPosées=[];
+var Score=0;
+randomSelectQuestion()
 
 function chargerQuestion() {
     document.getElementById("question").innerHTML = json[questionEnCours].question;
@@ -39,19 +36,57 @@ function chargerQuestion() {
 }
 
 function repondre(reponse) {
-    aRepondu = true;
-    suivant.hidden = false;
+    buttonA.disabled = true;
+    buttonB.disabled = true;
+    buttonC.disabled = true;
+    answer=document.getElementById("isGood");
     if(reponse === json[questionEnCours]["bonne réponse"]) {
-        alert("Bravo !")
-    } else {
-        alert("Mauvaise réponse !")
+        answer.innerHTML="Bonne réponse !";
+        Score++;
+        if(questionsDejaPosées.length === json.length) {
+            alert("Fin du jeu !") 
+            alert("Votre score est de " + Score + " sur " + json.length);
+        }
+        else {
+        suivant.hidden = false;
+        }
+    }
+    else {
+        answer.innerHTML="Mauvaise réponse !";
+        suivant.hidden = false;
+        if(questionsDejaPosées.length === json.length) {
+            alert("Fin du jeu !") 
+            alert("Votre score est de " + Score + " sur " + json.length);
+            
+        }
+
+        
     }
 }
+function randomSelectQuestion(){
+
+    //selection aléatoire de la prochaine question
+    questionEnCours = Math.floor(Math.random() * json.length);
+    //si la question a déjà été posée, on en sélectionne une autre
+    if(questionsDejaPosées.includes(questionEnCours)) {
+        randomSelectQuestion();
+    }
+    //sinon on ajoute la question à la liste des questions posées
+    else {
+        questionsDejaPosées.push(questionEnCours);
+    }
+    //si il n'y a plus de questions à poser, on réinitialise la liste des questions posées
+    };
 
 function suivantClick() {
-    questionEnCours++;
-    chargerQuestion();
     suivant.hidden = true;
+    buttonA.disabled = false;
+    buttonB.disabled = false;
+    buttonC.disabled = false;
+    answer=document.getElementById("isGood");
+    answer.innerHTML="";
+    randomSelectQuestion();
+    chargerQuestion();
 }
 
 chargerQuestion();
