@@ -3,8 +3,8 @@
     <head>
         <title></title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="main_css.css">
         <link rel="stylesheet" href="marco.css"/>
+        <link rel="stylesheet" href="main_css.css">
         <?php include("menu.html"); ?>
     </head>
     <body>
@@ -22,6 +22,8 @@
         <a class="contactPic" href="https://www.instagram.com/sexualites_info_sante"><img src="img/instagram sexualite info-sante.png"></a>
         <a class="contactPic" href="https://www.facebook.com/SidaInfoService"><img src="img/facebook sidainfoservice.png"></a>
     </div>
+    <p class="contactText">Ce site à été réalisé lors de la nuit de l'info 2022 par l'équipe "Papa Oute Es" de Polytech Tours composée de : <br>
+    Aitouazzou Cécilia, Blumstein Thomas, Casteret Zoé, Caussin Lorine, Esnault Corentin, Hovhannessian Hugo<a href="mailto:
     </div>
 
     </body>

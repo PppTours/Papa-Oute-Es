@@ -112,9 +112,9 @@ body{
 
 	#paraph1 {
 		height: 450px;
-		margin: 5px 0 50px 0;
+		margin: 5px 0 5px 0;
 		background-repeat: no-repeat;
-		background-image: url("img/paraph1.jpg");
+		background-image: url("img/title.png");
 		background-size: 100%;
 	}
 
@@ -163,7 +163,7 @@ body{
 		flex-direction: row;
 		font-family: Champagne;
 		color: #0f2b46;
-		padding: 50px;
+		padding: 30px;
 	}
 
 	#paraph3 > h2{
@@ -237,12 +237,12 @@ body{
 
 	a{
 		text-decoration: none;
-		color: #83919f;
+		color: #dfbebe;
 	}
 
 	a:visited{
 		text-decoration: none;
-		color: #83919f;
+		color: #dfbebe;
 	}
 
 	a:hover{
